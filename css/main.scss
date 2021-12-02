@@ -31,12 +31,10 @@ img {
 
 .nav-container {
   background-color: #ffffff;
-  position: relative;
+  position: fixed;
   width: 100%;
-
-  a {
-    color: #6700ee;
-  }
+  top: 0;
+  z-index: 99;
 }
 
 header {
@@ -78,6 +76,7 @@ header.active {
 }
 
 .toggle-button {
+  cursor: pointer;
   position: absolute;
   right: 2rem;
   display: flex;
@@ -85,27 +84,30 @@ header.active {
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  border: 0;
+  color: #fff;
 }
 
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #ff64cb;
+  background-color: #141c3a;
   border-radius: 10px;
 }
 
 a.nav-link {
   cursor: pointer;
   border-radius: 20px;
-  background: linear-gradient(to bottom, #ff64cb 0%, #ff64cb 100%);
+  background: linear-gradient(to bottom, #141c3a 0%, #141c3a 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 1px;
-  color: #ff64cb;
+  color: #141c3a;
   text-decoration: none;
   transition: background-size 0.5s;
 }
 
+a.nav-link.active,
 a.nav-link:hover {
   background-size: 4px 50px;
   color: #ffffff;
@@ -116,6 +118,7 @@ a.nav-link:hover {
   display: grid;
   text-align: center;
   padding: 3em 1.5em 2em 1.5em;
+  margin-top: 7.5em;
 
   .avatar {
     width: 150px;
