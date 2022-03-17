@@ -253,6 +253,13 @@ section {
   letter-spacing: 0.2em;
   font-size: 0.85em;
 }
+.subtitle a {
+  color: #6e00ff;
+}
+.subtitle:hover {
+  text-decoration: underline;
+  color: #6e00ff;
+}
 
 .featured-title {
   color: black;
@@ -274,6 +281,10 @@ section {
 .portfolio-container a img {
   border-radius: 0.5em;
   margin-bottom: 2em;
+}
+.portfolio-container a img:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  opacity: 0.75;
 }
 
 .portfolio-title {
